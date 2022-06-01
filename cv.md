@@ -11,3 +11,7 @@ Education
 ---------
 2021-2024 (expected)
 :   **FMK, Marketing**; BSEU (MyTown)
+
+My future
+---------
+In my future I want to be a great programmer
