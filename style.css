@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'Gilroy';
-    src: url('../fonts/Gilroy-Light.otf');
+    src: url('/fonts/Gilroy-Light.otf');
 }
 @font-face{
     font-family: 'Gilroy ExtraBold';
-    src: url('../fonts/Gilroy-ExtraBold.otf');
+    src: url('/fonts/Gilroy-ExtraBold.otf');
 }
 *{
     align-items: center;
