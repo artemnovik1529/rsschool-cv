@@ -1,1 +1,231 @@
+@font-face{
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Light.otf');
+}
+@font-face{
+    font-family: 'Gilroy ExtraBold';
+    src: url('/fonts/Gilroy-ExtraBold.otf');
+}
+*{
+    align-items: center;
+    scroll-behavior: smooth;
+}
 
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-family: Gilroy ExtraBold;
+    font-size: 47px;
+    line-height: 58px;
+}
+h2{
+    font-family: Gilroy ExtraBold;
+    font-size: 34px;
+    line-height: 42px;    
+    color: #070707;
+}
+
+p{
+    font-family: Gilroy ExtraBold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+    
+}
+._container{
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    align-items: center;
+    
+}
+.header {
+    height: 90px;
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+nav{
+    text-align: center;
+    
+}
+nav ul {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
+
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    margin: 0 100px;
+    line-height: 50px;
+}
+.vector{
+    position: relative;
+    width: 100%;
+    height: 0px;
+    top: 85;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.content-first{
+    width: 100%;
+    height: 500px;
+
+}
+
+.first-text{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    margin-left: 200px;
+    padding-right: -500px;
+}
+
+.section-first h1{
+    margin: 100px 0px 0px 0px;
+}
+
+.section-first img{
+    width: 400px;
+    height: 400px;
+    float:right;
+    margin: -100px 200px 0px 0px;
+    border-radius: 20px;
+}
+
+.section-second{
+    width: 100%;
+    height: 350px;
+    background: #F6F6F6;
+    padding-top: 80px;
+}
+
+.content-second{
+    width: 500px;
+    margin:auto;
+    align-items: center;
+}
+
+.section-second h2{
+    text-align: center;
+}
+
+.section-second p{
+    text-align: center;
+}
+
+.section-third{
+    width: 100%;
+    height: 350px;
+    padding-top: 80px;
+    align-items: center;
+}
+
+.content-third{
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+.section-third h2{
+    text-align: center;
+}
+.section-third p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-third img{
+    width: 80px;
+    height: 80px;
+}
+.examples-cont{
+    width: 500px;
+    margin:auto;
+    align-items: center;
+}
+
+.section-examples{
+    width: 100%;
+    height: 350px;
+    padding-top: 80px;
+    align-items: center;
+    background: #F6F6F6;
+}
+.link-project{
+    text-decoration: underline;
+}
+.section-examples h2{
+    text-align: center;
+}
+.section-examples p{
+    text-align: center;
+}
+.section-fourth{
+    width: 100%;
+    height: 300px;
+    padding-top: 80px;
+    align-items: center;
+
+}
+.section-fourth h2{
+    text-align: center;
+}
+.section-fourth p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btn-send{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #070707;
+}
+.btn p{
+    font-family: Gilroy ExtraBold;
+    font-size: 18px;
+    color: #F6F6F6;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background: #F6F6F6;
+}
+.footer-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+}
+
+.footer-cont p{
+    margin-left: 25px;
+}
+
+.github-img{
+    width: 40px;
+    height: 40px;
+    
+}
+.rs-img{
+    width: 100px;
+    height: 50px;
+}
