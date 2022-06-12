@@ -210,7 +210,9 @@ li{
     font-size: 18px;
     color: #F6F6F6;
 }
-
+.btn p:hover {
+    color: #ffb012; 
+} 
 .footer{
     width: 100%;
     height: 50px;
