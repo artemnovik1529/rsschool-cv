@@ -48,6 +48,9 @@ p{
     position: relative;
     z-index: 2;
 }
+a:hover {
+    color: #ffb012; 
+   } 
 nav{
     text-align: center;
     
