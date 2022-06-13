@@ -154,7 +154,7 @@ li{
 .content-third{
     display: flex;
     gap: 150px;
-    margin-left: 20px;
+    margin-left: 30px;
     justify-content: center;
 }
 .section-third h2{
