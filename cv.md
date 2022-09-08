@@ -10,3 +10,7 @@
 |2021-07-14 – 2022-02-07|Java Web Development, EPAM|
 
 
+
+|**Languages**|
+
+|English|B1|
