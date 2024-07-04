@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script src="./script.js"></script>
+    <title>CV</title>
+</head>
+<body class="container">
+<header class="header">
+    <nav>
+        <div class="logo">Artem Novik</div>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#my_works">My works</a></li>
+                <li><a href="#example">Code example</a></li>
+            </ul>
+    </nav>
+</header>
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="/assets/myPhoto.png" alt="Artem Novik profile picture">
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h2 class="title">Artem Novik</h2>
+        <p class="section__text__p2">Begginer Frontend Developer</p>
+        <div class="btn-container">
+            <a href="#openModal" class="btn btn-color-1">Contact Info</a>
+            <div id="socials-container">
+                <img src="/assets/telegram.png" alt="My Telegram profile" class="icon" onclick="location.href='//t.me/artm'">
+                <img src="/assets/github.png" alt="My Github profile" class="icon" onclick="location.href='//github.com/artemnovik1529'">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h2 class="title">About Me</h2>
+    <div class="section-container-about">
+        <div class="section__pic-container">
+            <img  src="./assets/myPhoto2.jpg" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img  src="/assets/experience.png" alt="Experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p>1 year <br>Java Web Development</p>
+                </div>
+                <div class="details-container">
+                    <img src="/assets/education.png" alt="Education icon" class="icon">
+                    <h3>Education</h3>
+                    <p>EPAM Java Web Development<br>Stepik JavaScript for begginers</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>My name is Artem. I'm 23 years old. I live in Minsk, Belarus.
+                    In 2021 I completed EPAM courses Java Web Development, after which I took courses at Stepik.
+                    In 2022   I joined the army, which forced me to pause my education.
+                    Now I want to continue my education and become a front-end developer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="skills">
+    <p>During my studies, I got acquainted with many programs that I own at a good level</p>
+    <h2 class="title">Skills</h2>
+    <div class="my_skills">
+        <div><img src="/assets/webstorm.svg" alt="webstorm">
+            <div class="progress_line_1"></div>
+            <p>80%</p>
+        </div>
+        <div><img src="/assets/figma.svg" alt="figma">
+            <div class="progress_line_2"></div>
+            <p>80%</p>
+        </div>
+        <div><img src="/assets/git.svg" alt="git">
+            <div class="progress_line_3"></div>
+            <p>90%</p>
+        </div>
+        <div><img src="/assets/visualstudio.svg" alt="visualstudio">
+            <div class="progress_line_4"></div>
+            <p>70%</p>
+        </div>
+        <div><img src="/assets/photoshop.svg" alt="photoshop">
+            <div class="progress_line_5"></div>
+            <p>100%</p>
+        </div>
+        <div><img src="/assets/mysql.svg" alt="mysql">
+            <div class="progress_line_6"></div>
+            <p>85%</p>
+        </div>
+    </div>
+</section>
+<section id="my_works">
+    <p>Throughout my training, I have done several projects that I can show as an example. You can find them below!</p>
+    <h2 class="title">My works</h2>
+    <div class="examples">
+        <div class="first_example">
+            <h3>JWD Shop</h3>
+            <p>In this project, it was necessary to make an online store on Java with the functions of adding goods,
+                blocking users, creating a personal account, adding goods to the cart. It was exciting and interesting!</p>
+            <a href="https://github.com/artemnovik1529/JWDShop">To project</a>
+        </div>
+        <div class="second_example">
+            <h3>Cooking</h3>
+            <p>In this project, it was necessary to make an application with the calculation of calories in cooked dishes.
+                The result was output to the console. It was a simple task that didn't take too long.</p>
+            <a href="https://github.com/artemnovik1529/Trenning">To project</a>
+        </div>
+    </div>
+</section>
+<section id="example">
+    <p>And here is an example of the code of one of my projects</p>
+    <h2>Code Example</h2>
+    <div class="code_example">
+        <p><code>
+            package com.epam.jwd.controller.command; <br>
+            import com.epam.jwd.controller.context.RequestContext;<br>
+            import com.epam.jwd.controller.context.ResponseContext;<br>
+            import com.epam.jwd.dao.Role;<br>
+            public interface Command {<br>
+            /**<br>
+            * Method is executed by controller to certain command<br>
+            *<br>
+            * @param context request from user<br>
+            * @return result of command by ResponseContext<br>
+            */<br>
+            ResponseContext execute(RequestContext context);<br>
+            /**<br>
+            * Method to extract command implementation from CommandType<br>
+            *<br>
+            * @param name parameter from request<br>
+            * @return Command representation for name parameter<br>
+            */<br>
+            static Command of(String name){<br>
+            return CommandType.getCommand(name);<br>
+            }<br>
+            /**<br>
+            * Method to check equality of user role and command access level<br>
+            *<br>
+            * @param role user role<br>
+            * @param commandName command name for checking level access<br>
+            * @return result of checking<br>
+            */<br>
+            static boolean isEqualAccess(Role role, String commandName){<br>
+            return CommandType.isEqualAccess(role, commandName);<br>
+            }<br>
+            }<br>
+        </code></p>
+    </div>
+</section>
+<footer class="footer">
+    <a href="https://rs.school/courses/javascript-preschool-ru"><img src="assets/rss.svg" alt="rss"></a>
+    <a class="git_footer" href="https://github.com/artemnovik1529"><img src="/assets/git_footer.png" alt="git"></a>
+    <p>Powered by Artem Novik in 2024</p>
+</footer>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="/assets/email.png" alt="email">
+        <div class="modal_content">
+            <h1>Contact Info</h1>
+            <h3>If you have any questions, you can write to me</h3>
+                <div class="modal_info">
+                    <p>Email: mr.artnov@mail.ru</p>
+                    <p>GitHub: artemnovik1529</p>
+                    <p>Instagram: @_artienovik_</p>
+                    <p>Telegram: @n_artm</p>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
