@@ -1,2 +1,2 @@
 # rsschool-cv
-https://artemnovik1529.github.io/rsschool-cv/index.gtml
+https://artemnovik1529.github.io/rsschool-cv/index.html
